@@ -153,12 +153,12 @@ nav ul li a:hover::after{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    height: 250px:
+    height: 280px:
 }
 .work img{
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
