@@ -171,12 +171,12 @@
 </script>
 
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbxAdQzg6su_wn1kc5deN_Wg4ZsAOZh7k_TwnpfpLzlX4PdkhO4r-yKJAP-1SEJ1Ys0/exec'
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzZVWqayzOjatLIJgQa5Jc3qOMQ-oGTe4_TtKxp_K4fl4unl9Lidatq5kMFTOfgoHlJ/exec'
   const form = document.forms['submit-to-google-sheet']
   const msg = document.getElementById("msg")
 
   form.addEventListener('submit', e => {
-    e.preventDefault()
+    e.preventDefault();
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
         msg.innerHTML = "Message sent successfully"
