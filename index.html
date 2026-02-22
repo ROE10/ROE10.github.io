@@ -190,5 +190,27 @@
   })
 </script>
 
+<script>
+// Hamburger menu toggle
+const menuIcon = document.querySelector('nav .fa-solid');
+const navMenu = document.querySelector('nav ul');
+
+menuIcon.addEventListener('click', () => {
+    if(navMenu.style.right === "0px"){
+        navMenu.style.right = "-200px"; // hide menu
+    } else {
+        navMenu.style.right = "0px"; // show menu
+    }
+});
+
+// Optional: hide menu when a link is clicked
+navMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.style.right = "-200px";
+    });
+});
+</script>
+
+
 </body>
 </html>
