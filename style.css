@@ -76,64 +76,60 @@ nav .fa-solid{
 }
 
 /* ================== Header Text ================== */
-/* -------- Header Text -------- */
-.header-text{
+/* Header text container */
+.header-text {
     margin-top: 15%;
     text-align: center;
 }
 
-/* Header name */
-.header-text h1{
+/* Header main H1 */
+.header-text .header-name {
     font-size: 60px;
     font-weight: 700;
     line-height: 1.2;
 }
 
-/* First name animation */
-.header-text h1 .letter{
+/* Animate first name */
+.header-text .animated-name {
     display: inline-block;
-    opacity: 0;
-    transform: translateX(-30px);
-    color: #ff004f; /* pink first name */
-    animation: slideIn 0.5s forwards;
+    color: #ff004f;
+    animation: slideIn 1s ease forwards;
 }
 
-/* Last name static white */
-.header-text h1 .lastname{
+/* Last name */
+.header-text .lastname {
+    display: block;
     color: #fff;
-    display: block;  /* always below first name */
     margin-top: 0;
 }
 
 /* Subtext */
-.header-text p{
+.header-text p {
     margin-top: 20px;
     color: #ababab;
     font-size: 20px;
 }
 
-/* Animation keyframes */
-@keyframes slideIn{
-    0%{opacity:0; transform: translateX(-30px);}
-    100%{opacity:1; transform: translateX(0);}
+/* Slide in animation */
+@keyframes slideIn {
+    0% {opacity: 0; transform: translateX(-30px);}
+    100% {opacity: 1; transform: translateX(0);}
 }
 
-/* -------- Mobile Fix -------- */
-@media only screen and (max-width: 600px){
-    .header-text h1{
-        font-size: 24px;      /* shrink font for mobile */
+/* Mobile adjustments */
+@media only screen and (max-width: 600px) {
+    .header-text .header-name {
+        font-size: 28px;
         line-height: 1.1;
     }
 
-    /* Wrap all letters in a span wrapper for mobile to keep together */
-    .header-text h1 .animated-firstname{
-        display: inline-block;  /* treat whole name as one block */
-        white-space: nowrap;    /* prevent breaking letters */
+    .header-text .animated-name {
+        white-space: nowrap; /* keep first name together */
     }
 
-    .header-text h1 .lastname{
-        display: block;
+    .header-text .lastname {
         margin-top: 5px;
+        display: block;
     }
 }
 /* ================== About Section ================== */
