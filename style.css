@@ -192,8 +192,10 @@ nav .fa-solid{
     position: relative;
     overflow: hidden;
 }
-.work img{
+.work img {
     width: 100%;
+    height: auto;       
+    min-height: 250px;  
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
