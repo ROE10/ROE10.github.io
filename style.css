@@ -79,17 +79,13 @@ nav .fa-solid{
 
 .header-text{
     margin-top: 15%;
-    text-align: center; 
-    overflow: hidden;
+    text-align: center;
 }
 
 .header-text h1{
     font-size: 60px;
     font-weight: 700;
     line-height: 1.2;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 .header-text h1 .letter{
@@ -101,9 +97,9 @@ nav .fa-solid{
 }
 
 .header-text h1 .lastname{
-    color: #fff; 
-    display: inline-block;
-    margin-left: 5px;
+    color: #fff;
+    display: block;  
+    margin-top: 0;   
 }
 
 .header-text p{
@@ -112,24 +108,25 @@ nav .fa-solid{
     font-size: 20px;
 }
 
-/* -------- Animation -------- */
+/* Animation */
 @keyframes slideIn{
     0%{opacity:0; transform: translateX(-30px);}
     100%{opacity:1; transform: translateX(0);}
 }
 
-/* -------- Mobile Fix for First Name -------- */
 @media only screen and (max-width: 600px){
     .header-text h1{
-        font-size: 28px;      
-        white-space: nowrap;  
-        line-height: 1.1;
+        font-size: 28px;        
     }
-    .header-text{
-        margin-top: 35%;     
+    .header-text h1 .letter{
+        display: inline-block;
+        white-space: nowrap;    
+    }
+    .header-text h1 .lastname{
+        margin-top: 5px;       
+        display: block;
     }
 }
-
 /* ================== About Section ================== */
 #about{
     padding: 80px 0;
