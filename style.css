@@ -76,55 +76,64 @@ nav .fa-solid{
 }
 
 /* ================== Header Text ================== */
-
+/* -------- Header Text -------- */
 .header-text{
     margin-top: 15%;
     text-align: center;
 }
 
+/* Header name */
 .header-text h1{
     font-size: 60px;
     font-weight: 700;
     line-height: 1.2;
 }
 
+/* First name animation */
 .header-text h1 .letter{
     display: inline-block;
     opacity: 0;
     transform: translateX(-30px);
-    color: #ff004f; 
+    color: #ff004f; /* pink first name */
     animation: slideIn 0.5s forwards;
 }
 
+/* Last name static white */
 .header-text h1 .lastname{
     color: #fff;
-    display: block;  
-    margin-top: 0;   
+    display: block;  /* always below first name */
+    margin-top: 0;
 }
 
+/* Subtext */
 .header-text p{
     margin-top: 20px;
     color: #ababab;
     font-size: 20px;
 }
 
-/* Animation */
+/* Animation keyframes */
 @keyframes slideIn{
     0%{opacity:0; transform: translateX(-30px);}
     100%{opacity:1; transform: translateX(0);}
 }
 
+/* -------- Mobile Fix -------- */
 @media only screen and (max-width: 600px){
     .header-text h1{
-        font-size: 28px;        
+        font-size: 24px;      /* shrink font for mobile */
+        line-height: 1.1;
     }
-    .header-text h1 .letter{
-        display: inline-block;
-        white-space: nowrap;    
+
+    /* Wrap all letters in a span wrapper for mobile to keep together */
+    .header-text h1 .animated-firstname{
+        display: inline-block;  /* treat whole name as one block */
+        white-space: nowrap;    /* prevent breaking letters */
     }
+
     .header-text h1 .lastname{
-        margin-top: 5px;       
         display: block;
+        margin-top: 5px;
     }
 }
 /* ================== About Section ================== */
