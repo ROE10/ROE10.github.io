@@ -15,7 +15,7 @@ nav ul li a:hover::after{width:100%;}
 nav .fa-solid{display:none;}
 
 /* ================== Header Text ================== */
-.header-text{margin-top:15%;text-align:center;}
+.header-text{margin-top:15%;text-align:left; padding:0 20px;}
 .header-name{font-size:60px;font-weight:700;line-height:1.2;}
 .animated-name{display:inline-block;color:#ff004f;animation:slideIn 1s ease forwards;}
 .lastname{display:block;color:#fff;margin-top:0;}
