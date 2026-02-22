@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +9,7 @@
     <script src="https://kit.fontawesome.com/ad0eddc114.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
 <div id="header">
     <div class="container">
         <nav>
@@ -23,25 +23,30 @@
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
+
         <div class="header-text">
-            <h1>Hi, I'm <span>Oluwasegun</span><br>Raphael</h1>
+            <h1 class="header-name">
+                Hello! I'm <span class="animated-name">Oluwasegun</span><br>
+                <span class="lastname">Raphael</span>
+            </h1>
             <p>Data Analyst & Consultant</p>
         </div>
     </div>
 </div>
+
 <!-- --------about----------- -->    
 <div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/roe_pic.JPG" class="profile_pic-" alt="img">
+                <img src="images/roe_pic.JPG" alt="Oluwasegun Raphael">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                
-                </p>   I am a Data Analyst with hands-on experience across public health, education, agricultural research, and business operations. I specialize in programming, data cleaning, machine learning, and building dynamic dashboards that transform raw data into actionable insights.
-                       What sets me apart is my ability to simplify complex information and apply it to real-world problems, from uncovering cost-saving opportunities, improving marketing strategies to predicting future trends and enhancing operational performance.
-                       I am passionate about helping organizations make smarter, data-driven decisions. I thrive in collaborative environments and enjoy translating data into clear, actionable direction that drives measurable impact.
+                <p>
+                   I am a Data Analyst with hands-on experience across public health, education, agricultural research, and business operations. I specialize in programming, data cleaning, machine learning, and building dynamic dashboards that transform raw data into actionable insights.
+                   What sets me apart is my ability to simplify complex information and apply it to real-world problems, from uncovering cost-saving opportunities, improving marketing strategies to predicting future trends and enhancing operational performance.
+                   I am passionate about helping organizations make smarter, data-driven decisions. I thrive in collaborative environments and enjoy translating data into clear, actionable direction that drives measurable impact.
                 </p>
                 
                 <div class="tab-titles">
@@ -49,33 +54,35 @@
                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
                     <p class="tab-links" onclick="opentab('education')">Education & Certifications</p>
                 </div>
+
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>Programming & Analysis</span><br> Python ( NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, TensorFlow), SQL( SQL Server Management Studio, MySQL, SQLite)</li>
-                        <li><span>Data Visualization & Reporting</span><br> Tableau, Power BI, Microsoft Excel, PowerPoint, Google Sheets</li>
-                        <li><span>Development & Analytical Tools</span><br> GitHub, Jupyter Notebook, Visual Studio Code, PyCharm</li>
-                        <li><span>Soft Skills</span><br> Stakeholder Communication, Business Insight Generation, EDA & Cleaning, Data Storytelling</li>
+                        <li><span>Programming & Analysis</span><br> Python (NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, TensorFlow), SQL (SQL Server, MySQL, SQLite)</li>
+                        <li><span>Data Visualization & Reporting</span><br> Tableau, Power BI, Excel, PowerPoint, Google Sheets</li>
+                        <li><span>Tools</span><br> GitHub, Jupyter Notebook, VS Code, PyCharm</li>
+                        <li><span>Soft Skills</span><br> Stakeholder Communication, Business Insight Generation, Data Cleaning & EDA, Data Storytelling</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
                     <ul>
                         <li><span>Data Analyst</span><br> National Agricultural Seeds Council (NASC)</li>
-                        <li><span>Data Training & Technology Administrator</span><br> Society for Family Health(SFH)</li>
+                        <li><span>Data Training & Technology Administrator</span><br> Society for Family Health (SFH)</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
                     <ul>
-                        <li><span></span><br> B.Tech (Marketing) - Ladoke Akintola University of Technology</li>
-                        <li><span></span><br> Data Science - ALX AFRICA</li>
-                        <li><span></span><br> Python for Data Science - IBM</li>
+                        <li>B.Tech (Marketing) - Ladoke Akintola University of Technology</li>
+                        <li>Data Science - ALX Africa</li>
+                        <li>Python for Data Science - IBM</li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 <!-- ------projects--------- -->
- <div id="projects">
+<div id="projects">
     <div class="container">
         <h1 class="sub-title">Projects</h1>
         <div class="work-list">
@@ -83,30 +90,30 @@
                 <img src="images/Agricultural_Climate_Change.png">
                 <div class="layer">
                     <h3>Agricultural Performance & Climate Impact</h3>
-                    <p>Modeled the relationship between climate indicators and agricultural output to uncover key environmental drivers of crop performance and deliver actionable insights for improved farm productivity and resilience.</p>
-                    <a href="https://github.com/ROE10/-Agricultural-Performance-Climate-Impact-Dashboard.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <p>Modeled climate impact on agriculture to deliver actionable insights and improve farm productivity.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="images/superstore_analysis.png">
                 <div class="layer">
                     <h3>SuperStore Analysis</h3>
-                    <p>Conducted exploratory data analysis on Super Store sales data to uncover key factors influencing revenue, profit margins, discount impact, and regional performance, supporting data-driven business decision-making..</p>
-                    <a href="https://github.com/ROE10/Super-Store-Analytics.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <p>Analyzed sales data to uncover revenue drivers and optimize business decisions.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="images/Data_Job_Analysis.png">
                 <div class="layer">
                     <h3>Data Job Analysis</h3>
-                    <p>Addressed challenges for job seekers and career changers by providing insights into top-paying and in-demand data-related skills.</p>
-                    <a href="https://github.com/ROE10/Snake-Game.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <p>Provided insights into top-paying and in-demand data-related skills for career guidance.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
         <a href="#header" class="btn">Return Home</a>
     </div>
- </div>
+</div>
 
 <!-- ------contact--------- -->
 <div id="contact">
@@ -117,9 +124,9 @@
                 <p><i class="fa-solid fa-paper-plane"></i> ralpholuwashegun@gmail.com</p>
                 <p><i class="fa-solid fa-square-phone"></i> +234 704 471 1492</p>
                 <div class="social-icons">
-                    <a href="http://linkedin.com/in/roe10"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/roe10"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://x.com/bigroe001"><i class="fa-brands fa-x-twitter"></i></a> 
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a> 
                 </div>
                 <a href="images/Oluwasegun_Raphael_resume.pdf" download class="btn btn2">Download CV</a>
             </div>
@@ -135,14 +142,12 @@
         </div>
     </div>
     <div class="copyright">
-        <p>© 2023 ROE </p>
+        <p>© 2023 ROE</p>
     </div>
-</div> 
+</div>
 
-
-
+<!-- Scripts -->
 <script>
-
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
     function opentab(tabname){
@@ -156,61 +161,32 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
 
-</script>
-
-<script>
-
     var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){ sidemeu.style.right = "0"; }
+    function closemenu(){ sidemeu.style.right = "-200px"; }
 
-    function openmenu(){
-        sidemeu.style.right = "0";
-    }
-    function closemenu(){
-        sidemeu.style.right = "-200px";
-    }
+    const scriptURL = 'https://script.google.com/macros/s/.../exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(()=>{ msg.innerHTML = "" },5000)
+            form.reset()
+        }).catch(error => console.error('Error!', error.message))
+    })
 
-</script>
-
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwiuIzMOaB9NBSdX-LrhnJ2GkMGjg6A7mkjcRoxtNg-qy4bzOt5S6KDKoAqqMb_S20f/exec'
-  const form = document.forms['submit-to-google-sheet']
-  const msg = document.getElementById("msg")
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        msg.innerHTML = "Message sent successfully"
-        setTimeout(function(){
-            msg.innerHTML = ""
-        },5000)
-        form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
-
-<script>
-// Hamburger menu toggle
-const menuIcon = document.querySelector('nav .fa-solid');
-const navMenu = document.querySelector('nav ul');
-
-menuIcon.addEventListener('click', () => {
-    if(navMenu.style.right === "0px"){
-        navMenu.style.right = "-200px"; // hide menu
-    } else {
-        navMenu.style.right = "0px"; // show menu
-    }
-});
-
-// Optional: hide menu when a link is clicked
-navMenu.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-        navMenu.style.right = "-200px";
+    const menuIcon = document.querySelector('nav .fa-solid');
+    const navMenu = document.querySelector('nav ul');
+    menuIcon.addEventListener('click', () => {
+        navMenu.style.right = (navMenu.style.right==="0px")? "-200px":"0px";
     });
-});
+    navMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', ()=>{navMenu.style.right="-200px";});
+    });
 </script>
-
 
 </body>
 </html>
