@@ -202,6 +202,116 @@ nav ul li a:hover::after{
     color: #81c784;
 }
 
+/* --------Experience Section - Skills Style----------- */
+.tab-contents#experience ul li {
+    list-style: none;
+    margin: 10px 0;
+    padding: 8px 0;
+}
+
+.exp-title {
+    color: #b54769;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.exp-badge {
+    padding: 2px 12px;
+    border-radius: 20px;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.exp-company {
+    color: #ababab;
+    font-size: 14px;
+    display: block;
+    margin-top: 2px;
+    padding-left: 4px;
+}
+
+/* Badge Colors - Softer to match the dark theme */
+.exp-badge.remote {
+    background: #1a3a5c;
+    color: #4fc3f7;
+}
+
+.exp-badge.hybrid {
+    background: #3a1a5c;
+    color: #ce93d8;
+}
+
+.exp-badge.onsite {
+    background: #3a2a1a;
+    color: #ffb74d;
+}
+
+.exp-badge.contract {
+    background: #1a3a2a;
+    color: #81c784;
+}
+
+/* --------Certification Links - Updated----------- */
+.tab-contents#certifications ul li {
+    list-style: none;
+    margin: 10px 0;
+    color: #ababab;
+    font-size: 14px;
+}
+
+.tab-contents#certifications ul li i {
+    color: #b54769;
+    font-size: 1rem;
+    margin-right: 8px;
+    width: 18px;
+}
+
+.cert-link {
+    color: #b54769;
+    text-decoration: none;
+    font-style: italic;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.cert-link:hover {
+    color: #ff004f;
+    text-decoration: none;
+}
+/* --------Certification Links - Updated----------- */
+.tab-contents#certifications ul li {
+    list-style: none;
+    margin: 10px 0;
+    color: #ababab;
+    font-size: 14px;
+}
+
+.tab-contents#certifications ul li i {
+    color: #b54769;
+    font-size: 1rem;
+    margin-right: 8px;
+    width: 18px;
+}
+
+.cert-link {
+    color: #b54769;
+    text-decoration: none;
+    font-style: italic;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.cert-link:hover {
+    color: #ff004f;
+    text-decoration: none;
+}
+
 /* --------Certification Links----------- */
 .tab-contents#certifications ul li {
     display: flex;
@@ -464,4 +574,21 @@ nav .fa-solid{
     color: #61b752;
     margin-top: -40px;
     display: block;
+}
+
+@media only screen and (max-width: 600px){
+    /* ... existing mobile styles ... */
+    
+    /* Experience mobile */
+    .exp-title {
+        font-size: 13px;
+    }
+    
+    .exp-company {
+        font-size: 13px;
+    }
+    
+    .exp-badge {
+        font-size: 0.6rem;
+    }
 }
