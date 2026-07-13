@@ -69,6 +69,7 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #ff004f;
 }
+
 /* --------about----------- */
 #about{
     padding: 80px 0;
@@ -79,7 +80,6 @@ nav ul li a:hover::after{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .about-col-1{
     flex-basis: 35%;
 }
@@ -90,16 +90,15 @@ nav ul li a:hover::after{
 .about-col-2{
     flex-basis: 60%;
 }
-
 .sub-title{
     font-size: 60px;
     font-weight: 600;
     color: #fff;
 }
-
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
+    flex-wrap: wrap;
 }
 .tab-links{
     margin-right: 50px;
@@ -118,11 +117,9 @@ nav ul li a:hover::after{
     bottom: -8px;
     transition: 0.5s;
 }
-
 .tab-links.active-link::after{
     width: 50%;
 }
-
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
@@ -138,6 +135,113 @@ nav ul li a:hover::after{
     display: block;
 }
 
+/* --------Experience Section----------- */
+.tab-contents#experience ul li {
+    list-style: none;
+    margin: 14px 0;
+    padding: 0;
+}
+
+.exp-title {
+    color: #b54769;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.exp-meta {
+    display: block;
+}
+
+.exp-badge {
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 0.62rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.exp-company {
+    color: #ababab;
+    font-size: 13px;
+    display: inline;
+}
+
+.exp-date {
+    color: #666;
+    font-size: 12px;
+    display: block;
+    margin-top: 3px;
+    padding-left: 2px;
+}
+
+/* Badge Colors */
+.exp-badge.remote {
+    background: #1a3a5c;
+    color: #4fc3f7;
+}
+.exp-badge.hybrid {
+    background: #3a1a5c;
+    color: #ce93d8;
+}
+.exp-badge.onsite {
+    background: #3a2a1a;
+    color: #ffb74d;
+}
+.exp-badge.contract {
+    background: #1a3a2a;
+    color: #81c784;
+}
+
+/* --------Education Section----------- */
+.tab-contents#education ul li {
+    list-style: none;
+    margin: 12px 0;
+    color: #ababab;
+    font-size: 14px;
+}
+.tab-contents#education ul li span {
+    color: #b54769;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 2px;
+}
+
+/* --------Certifications Section----------- */
+.tab-contents#certifications ul li {
+    list-style: none;
+    margin: 12px 0;
+    color: #ababab;
+    font-size: 14px;
+}
+.tab-contents#certifications ul li i {
+    color: #b54769;
+    font-size: 0.9rem;
+    margin-right: 8px;
+    width: 18px;
+}
+a.cert-link {
+    color: #b54769 !important;
+    text-decoration: none !important;
+    font-style: italic !important;
+}
+a.cert-link:link {
+    color: #b54769 !important;
+    text-decoration: none !important;
+}
+a.cert-link:visited {
+    color: #b54769 !important;
+    text-decoration: none !important;
+}
+a.cert-link:hover {
+    color: #ff004f !important;
+    text-decoration: none !important;
+}
 /* --------projects----------- */
 #projects{
     padding: 50px 0;
@@ -152,7 +256,7 @@ nav ul li a:hover::after{
 .work{
     border-radius: 10px;
     position: relative;
-    overflow: hidden;;
+    overflow: hidden;
 }
 .work img{
     width: 100%;
@@ -268,7 +372,6 @@ form .btn2{
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
-
 }
 .copyright{
     width: 100%;
@@ -280,7 +383,6 @@ form .btn2{
 }
 
 /* --------css for small screens----------- */
-
 nav .fa-solid{
     display: none;
 }
@@ -336,7 +438,10 @@ nav .fa-solid{
   }
   .tab-links{
     font-size: 16px;
-    margin-right: 20;
+    margin-right: 20px;
+  }
+  .tab-titles{
+    gap: 10px;
   }
   .contact-left, .contact-right{
     flex-basis: 100%;
@@ -344,7 +449,18 @@ nav .fa-solid{
   .copyright{
     font-size: 14px;
   }
-
+  .exp-title {
+    font-size: 13px;
+  }
+  .exp-company {
+    font-size: 13px;
+  }
+  .exp-badge {
+    font-size: 0.6rem;
+  }
+  .exp-date {
+    margin-left: 0;
+  }
 }
 
 #msg{
