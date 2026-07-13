@@ -1,4 +1,75 @@
-<!-- Experience Section - Updated -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oluwasegun Raphael Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ad0eddc114.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/roe_logo.png" class="logo" alt="ROE Logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-x" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+            <h1 class="header-name">
+                Hello! 
+                I'm <span class="animated-name">Oluwasegun</span><br>
+                <span class="lastname">Raphael</span>
+            </h1>
+            <p>Data Scientist & Analyst</p>
+        </div>
+    </div>
+</div>
+
+<!-- --------about----------- -->    
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/roe_pic.JPG" alt="Oluwasegun Raphael">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Data Scientist and Analyst with 3+ years of experience delivering end-to-end analytical workflows across telecom, finance, healthcare, agriculture, and public sector domains. 
+                    I specialize in Python, machine learning, and statistical analysis; building reproducible pipelines that go from raw data to actionable business decisions. 
+                    Experienced in prompt engineering and LLM evaluation workflows, with a proven track record of translating complex analytical findings into insights that drive measurable impact.
+                </p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming & Analysis</span><br> Python (NumPy, Pandas, SciPy, Statsmodels, Matplotlib, Seaborn, Scikit-learn, TensorFlow), SQL (SQL Server, MySQL, SQLite)</li>
+                        <li><span>Machine Learning</span><br> Regression, Classification, Clustering, A/B Testing, Feature Engineering, Model Validation, Predictive Modeling</li>
+                        <li><span>Web Scraping & Automation</span><br> BeautifulSoup, Selenium, Requests, data extraction from dynamic and static web sources</li>
+                        <li><span>Visualization & Reporting</span><br> Tableau, Power BI, Excel, PowerPoint, Google Sheets</li>
+                        <li><span>GenAI & Emerging Tech</span><br> Prompt Engineering, LLM Evaluation, AI Model Training, Data Annotation</li>
+                        <li><span>Tools</span><br> GitHub, Git, Jupyter Notebook, VS Code, PyCharm, Jira, Confluence</li>
+                        <li><span>Soft Skills</span><br> Stakeholder Communication, Technical Documentation, Business Insight Generation, Team Leadership, Cross-functional Communication</li>
+                    </ul>
+                </div>
+                
+                <!-- Experience Section - Updated -->
 <div class="tab-contents" id="experience">
     <ul>
         <li>
@@ -24,38 +95,216 @@
     </ul>
 </div>
 
-<!-- Certifications Section - Updated -->
-<div class="tab-contents" id="certifications">
-    <ul>
-        <li>
-            <i class="fa-solid fa-certificate"></i> 
-            Data Science - 
-            <a href="https://ehub.alxafrica.com/certificates/verify/6bdaf5de-3216-480b-a9b6-f95b4d65bbd1" target="_blank" class="cert-link">ALX Africa</a>
-        </li>
-        <li>
-            <i class="fa-solid fa-certificate"></i> 
-            Data Analytics - 
-            <a href="https://savanna.alxafrica.com/certificates/JNLmP579s3" target="_blank" class="cert-link">ALX Africa</a>
-        </li>
-        <li>
-            <i class="fa-solid fa-certificate"></i> 
-            Python for Data Science - 
-            <a href="https://courses.skillsbuild.skillsnetwork.site/certificates/1de73321e91b43f6861c08d04434e505" target="_blank" class="cert-link">IBM</a>
-        </li>
-        <li>
-            <i class="fa-solid fa-certificate"></i> 
-            Data Analysis with Python - 
-            <a href="https://courses.skillsbuild.skillsnetwork.site/certificates/188d484f469b424887732ab72997fcf6" target="_blank" class="cert-link">IBM</a>
-        </li>
-        <li>
-            <i class="fa-solid fa-certificate"></i> 
-            AI Literacy - 
-            <a href="https://www.credly.com/badges/d8647b24-f3e9-4482-893c-9c42e6acf6a6/whatsapp" target="_blank" class="cert-link">IBM</a>
-        </li>
-        <li>
-            <i class="fa-solid fa-certificate"></i> 
-            Data Literacy - 
-            <a href="https://www.credly.com/badges/19c06c7d-5376-472f-a35c-774756c8f7b0/whatsapp" target="_blank" class="cert-link">IBM</a>
-        </li>
-    </ul>
+                <!-- Certifications Section - Updated -->
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-certificate"></i> 
+                            Data Science - 
+                            <a href="https://ehub.alxafrica.com/certificates/verify/6bdaf5de-3216-480b-a9b6-f95b4d65bbd1" target="_blank" class="cert-link">ALX Africa</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-certificate"></i> 
+                            Data Analytics - 
+                            <a href="https://savanna.alxafrica.com/certificates/JNLmP579s3" target="_blank" class="cert-link">ALX Africa</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-certificate"></i> 
+                            Python for Data Science - 
+                            <a href="https://courses.skillsbuild.skillsnetwork.site/certificates/1de73321e91b43f6861c08d04434e505" target="_blank" class="cert-link">IBM</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-certificate"></i> 
+                            Data Analysis with Python - 
+                            <a href="https://courses.skillsbuild.skillsnetwork.site/certificates/188d484f469b424887732ab72997fcf6" target="_blank" class="cert-link">IBM</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-certificate"></i> 
+                            AI Literacy - 
+                            <a href="https://www.credly.com/badges/d8647b24-f3e9-4482-893c-9c42e6acf6a6/whatsapp" target="_blank" class="cert-link">IBM</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-certificate"></i> 
+                            Data Literacy - 
+                            <a href="https://www.credly.com/badges/19c06c7d-5376-472f-a35c-774756c8f7b0/whatsapp" target="_blank" class="cert-link">IBM</a>
+                        </li>
+                    </ul>
+                </div>                
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li>B.Tech (Marketing) - Ladoke Akintola University of Technology</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-certificate"></i> 
+                            Data Science - 
+                            <a href="https://ehub.alxafrica.com/certificates/verify/6bdaf5de-3216-480b-a9b6-f95b4d65bbd1" target="_blank" class="cert-link">ALX Africa</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-certificate"></i> 
+                            Data Analytics - 
+                            <a href="https://savanna.alxafrica.com/certificates/JNLmP579s3" target="_blank" class="cert-link">ALX Africa</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-certificate"></i> 
+                            Python for Data Science - 
+                            <a href="https://courses.skillsbuild.skillsnetwork.site/certificates/1de73321e91b43f6861c08d04434e505" target="_blank" class="cert-link">IBM</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-certificate"></i> 
+                            Data Analysis with Python - 
+                            <a href="https://courses.skillsbuild.skillsnetwork.site/certificates/188d484f469b424887732ab72997fcf6" target="_blank" class="cert-link">IBM</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-certificate"></i> 
+                            AI Literacy - 
+                            <a href="https://www.credly.com/badges/d8647b24-f3e9-4482-893c-9c42e6acf6a6/whatsapp" target="_blank" class="cert-link">IBM</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-certificate"></i> 
+                            Data Literacy - 
+                            <a href="https://www.credly.com/badges/19c06c7d-5376-472f-a35c-774756c8f7b0/whatsapp" target="_blank" class="cert-link">IBM</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+<!-- ------projects--------- -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/customer_churn_prediction.png" alt="Customer Churn Prediction">
+                <div class="layer">
+                    <h3>Customer Churn Prediction Pipeline</h3>
+                    <p>End-to-end ML pipeline predicting telecom customer churn — 3 models compared (Logistic Regression, Random Forest, Gradient Boosting), 85% ROC-AUC, risk segmentation, and statistical inference with Statsmodels. Includes a step-by-step walkthrough notebook for learners.</p>
+                    <a href="https://github.com/ROE10/customer-churn-prediction.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/web_scraping_retail_analytics.png" alt="Web Scraping Retail Analytics">
+                <div class="layer">
+                    <h3>Web Scraping & Retail Analytics Pipeline</h3>
+                    <p>Automated end-to-end Python scraping pipeline extracting 1,000+ books across 50 categories using BeautifulSoup and Requests — multi-page pagination, data validation, structured CSV/JSON output, and EDA. Includes a step-by-step notebook for collaborators.</p>
+                    <a href="https://github.com/ROE10/web-scraping-retail-analytics.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/AB_Testing.png" alt="A/B Testing Analysis">
+                <div class="layer">
+                    <h3>Targeted Discount A/B Testing Analysis</h3>
+                    <p>Performed end-to-end A/B testing and financial impact analysis to recommend a targeted discount strategy for reducing customer churn.</p>
+                    <a href="https://github.com/ROE10/ab-testing-retention-project.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Agricultural_Climate_Change.png" alt="Agricultural Climate Impact">
+                <div class="layer">
+                    <h3>Agricultural Performance & Climate Impact</h3>
+                    <p>Modeled climate impact on agriculture to deliver actionable insights and improve farm productivity.</p>
+                    <a href="https://github.com/ROE10/-Agricultural-Performance-Climate-Impact-Dashboard.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/superstore_analysis.png" alt="SuperStore Analysis">
+                <div class="layer">
+                    <h3>SuperStore Analysis</h3>
+                    <p>Analyzed sales data to uncover revenue drivers and optimize business decisions.</p>
+                    <a href="https://github.com/ROE10/Super-Store-Analytics.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Insurance_Claims_Risk_Analytics.png" alt="Insurance Claims Analytics">
+                <div class="layer">
+                    <h3>Insurance Claims Risk & Customer Analytics</h3>
+                    <p>Analyzed insurance claims and customer risk patterns to identify fraud indicators, claim severity drivers, and profitability trends.</p>
+                    <a href="https://github.com/ROE10/Insurance-Claims-Customer-Analytics-Dashboard.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#header" class="btn">Return Home</a>
+    </div>
+</div>
+
+<!-- ------contact--------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> ralpholuwashegun@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +234 704 471 1492</p>
+                <div class="social-icons">
+                    <a href="http://linkedin.com/in/roe10"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/roe10"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://x.com/iam_ralph10?s=11"><i class="fa-brands fa-x-twitter"></i></a> 
+                </div>
+                <a href="images/Oluwasegun_Raphael_resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2023 ROE. All rights reserved.</p>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){ sidemeu.style.right = "0"; }
+    function closemenu(){ sidemeu.style.right = "-200px"; }
+
+    const scriptURL = 'https://script.google.com/macros/s/.../exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(()=>{ msg.innerHTML = "" },5000)
+            form.reset()
+        }).catch(error => console.error('Error!', error.message))
+    })
+
+    const menuIcon = document.querySelector('nav .fa-solid');
+    const navMenu = document.querySelector('nav ul');
+    menuIcon.addEventListener('click', () => {
+        navMenu.style.right = (navMenu.style.right==="0px")? "-200px":"0px";
+    });
+    navMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', ()=>{navMenu.style.right="-200px";});
+    });
+</script>
+
+</body>
+</html>
