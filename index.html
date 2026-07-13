@@ -26,10 +26,11 @@
 
         <div class="header-text">
             <h1 class="header-name">
-                Hello! I'm <span class="animated-name">Oluwasegun</span><br>
+                Hello! 
+                I'm <span class="animated-name">Oluwasegun</span><br>
                 <span class="lastname">Raphael</span>
             </h1>
-            <p>Data Analyst & Consultant</p>
+            <p>Data Scientist & Analyst</p>
         </div>
     </div>
 </div>
@@ -44,23 +45,27 @@
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
                 <p>
-                   I am a Data Analyst with hands-on experience across public health, education, agricultural research, and business operations. I specialize in programming, data cleaning, machine learning, and building dynamic dashboards that transform raw data into actionable insights.
-                   What sets me apart is my ability to simplify complex information and apply it to real-world problems, from uncovering cost-saving opportunities, improving marketing strategies to predicting future trends and enhancing operational performance.
-                   I am passionate about helping organizations make smarter, data-driven decisions. I thrive in collaborative environments and enjoy translating data into clear, actionable direction that drives measurable impact.
+                    Data Scientist and Analyst with 3+ years of experience delivering end-to-end analytical workflows across telecom, finance, healthcare, agriculture, and public sector domains. 
+                    I specialize in Python, machine learning, and statistical analysis; building reproducible pipelines that go from raw data to actionable business decisions. 
+                    Experienced in prompt engineering and LLM evaluation workflows, with a proven track record of translating complex analytical findings into insights that drive measurable impact.
                 </p>
                 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education & Certifications</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
                 </div>
 
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>Programming & Analysis</span><br> Python (NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, TensorFlow), SQL (SQL Server, MySQL, SQLite)</li>
+                        <li><span>Programming & Analysis</span><br> Python (NumPy, Pandas, SciPy, Statsmodels, Matplotlib, Seaborn, Scikit-learn, TensorFlow), SQL (SQL Server, MySQL, SQLite)</li>
+                        <li><span>Machine Learning</span><br> Regression, Classification, Clustering, A/B Testing, Feature Engineering, Model Validation, Predictive Modeling</li>
+                        <li><span>Web Scraping & Automation</span><br> BeautifulSoup, Selenium, Requests, data extraction from dynamic and static web sources</li>
                         <li><span>Visualization & Reporting</span><br> Tableau, Power BI, Excel, PowerPoint, Google Sheets</li>
-                        <li><span>Tools</span><br> GitHub, Git, Jupyter Notebook, VS Code, PyCharm</li>
-                        <li><span>Soft Skills</span><br> Stakeholder Communication, Business Insight Generation, Data Cleaning & EDA, Data Storytelling</li>
+                        <li><span>GenAI & Emerging Tech</span><br> GenAI & Emerging Tech</li>
+                        <li><span>Tools</span><br> GitHub, Git, Jupyter Notebook, VS Code, PyCharm, Jira, Confluence</li>
+                        <li><span>Soft Skills</span><br> Stakeholder Communication, Technical Documentation, Business Insight Generation, Team Leadership, Cross-functional Communication</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
@@ -73,8 +78,16 @@
                 <div class="tab-contents" id="education">
                     <ul>
                         <li>B.Tech (Marketing) - Ladoke Akintola University of Technology</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certifications">
+                    <ul>
                         <li>Data Science - ALX Africa</li>
+                        <li>Data Analytics - ALX Africa</li>
                         <li>Python for Data Science - IBM</li>
+                        <li>Data Analysis with python - IBM</li>
+                        <li>AI Literacy - IBM</li>
+                        <li>Data Literacy - IBM</li>
                     </ul>
                 </div>
             </div>
@@ -87,6 +100,22 @@
     <div class="container">
         <h1 class="sub-title">Projects</h1>
         <div class ="work-list">
+            <div class="work">
+                <img src="images/customer-churn-prediction.png">
+                <div class="layer">
+                    <h3>Customer Churn Prediction Pipeline</h3>
+                    <p>End-to-end ML pipeline predicting telecom customer churn — 3 models compared (Logistic Regression, Random Forest, Gradient Boosting), 85% ROC-AUC, risk segmentation, and statistical inference with Statsmodels. Includes a step-by-step walkthrough notebook for learners.</p>
+                    <a href="https://github.com/ROE10/customer-churn-prediction.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/web-scraping-retail-analytics.png">
+                <div class="layer">
+                    <h3>Web Scraping & Retail Analytics Pipeline</h3>
+                    <p>Automated end-to-end Python scraping pipeline extracting 1,000+ books across 50 categories using BeautifulSoup and Requests — multi-page pagination, data validation, structured CSV/JSON output, and EDA. Includes a step-by-step notebook for collaborators.</p>
+                    <a href="https://github.com/ROE10/web-scraping-retail-analytics.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
             <div class="work">
                 <img src="images/AB_Testing.png">
                 <div class="layer">
@@ -109,14 +138,6 @@
                     <h3>SuperStore Analysis</h3>
                     <p>Analyzed sales data to uncover revenue drivers and optimize business decisions.</p>
                     <a href="https://github.com/ROE10/Super-Store-Analytics.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/Student_Mental_Health.png">
-                <div class="layer">
-                    <h3>Student Mental Health Analytics Dashboard</h3>
-                    <p>Analyzed student mental health data to identify trends in depression, sleep, academic pressure, and financial stress using SQL Server and Tableau.</p>
-                    <a href="https://github.com/ROE10/Student-Mental-Health-Analytics-Dashboard.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
