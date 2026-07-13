@@ -162,7 +162,7 @@ nav ul li a:hover::after{
     font-weight: 600;
     color: #fff;
     font-size: 1rem;
-    min-width: 180px;
+    min-width: 200px;
 }
 
 .exp-company {
@@ -203,27 +203,29 @@ nav ul li a:hover::after{
 }
 
 /* --------Certification Links----------- */
-.cert-link {
+.tab-contents#certifications ul li {
     display: flex;
     align-items: center;
     gap: 10px;
+    padding: 6px 0;
     color: #ababab;
+}
+
+.tab-contents#certifications ul li i {
+    color: #ff004f;
+    font-size: 1rem;
+    width: 20px;
+}
+
+.cert-link {
+    color: #fff;
     text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 6px;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
+    font-weight: 500;
 }
 
 .cert-link:hover {
-    background: #1a1a1a;
     color: #ff004f;
-    transform: translateX(5px);
-}
-
-.cert-link i {
-    color: #ff004f;
-    font-size: 1.1rem;
-    width: 20px;
 }
 
 /* --------projects----------- */
