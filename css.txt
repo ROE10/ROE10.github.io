@@ -225,15 +225,16 @@ nav ul li a:hover::after{
     margin-right: 8px;
     width: 18px;
 }
-.cert-link,
-.cert-link:link,
-.cert-link:visited {
+a.cert-link,
+a.cert-link:link,
+a.cert-link:visited,
+a.cert-link:active {
     color: #b54769 !important;
     text-decoration: none !important;
-    font-style: italic;
+    font-style: italic !important;
     font-weight: 500;
 }
-.cert-link:hover {
+a.cert-link:hover {
     color: #ff004f !important;
     text-decoration: none !important;
 }
