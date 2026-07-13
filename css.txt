@@ -225,19 +225,23 @@ nav ul li a:hover::after{
     margin-right: 8px;
     width: 18px;
 }
-.cert-link,
-.cert-link:link,
-.cert-link:visited,
-.cert-link:active,
-.cert-link:hover {
+a.cert-link {
     color: #b54769 !important;
     text-decoration: none !important;
     font-style: italic !important;
 }
-.cert-link:hover {
-    color: #ff004f !important;
+a.cert-link:link {
+    color: #b54769 !important;
+    text-decoration: none !important;
 }
-
+a.cert-link:visited {
+    color: #b54769 !important;
+    text-decoration: none !important;
+}
+a.cert-link:hover {
+    color: #ff004f !important;
+    text-decoration: none !important;
+}
 /* --------projects----------- */
 #projects{
     padding: 50px 0;
