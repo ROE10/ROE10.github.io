@@ -139,69 +139,6 @@ nav ul li a:hover::after{
     display: block;
 }
 
-/* --------Experience Section Styles----------- */
-.tab-contents#experience ul li {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px 15px;
-    padding: 12px 16px;
-    margin-bottom: 12px;
-    background: #1a1a1a;
-    border-radius: 8px;
-    border-left: 3px solid #ff004f;
-    transition: all 0.3s ease;
-}
-
-.tab-contents#experience ul li:hover {
-    background: #252525;
-    transform: translateX(5px);
-}
-
-.exp-title {
-    font-weight: 600;
-    color: #fff;
-    font-size: 1rem;
-    min-width: 200px;
-}
-
-.exp-company {
-    color: #ababab;
-    font-size: 0.95rem;
-    margin-left: auto;
-}
-
-.exp-badge {
-    padding: 3px 14px;
-    border-radius: 20px;
-    font-size: 0.7rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    white-space: nowrap;
-}
-
-/* Badge Colors */
-.exp-badge.remote {
-    background: #1a3a5c;
-    color: #4fc3f7;
-}
-
-.exp-badge.hybrid {
-    background: #3a1a5c;
-    color: #ce93d8;
-}
-
-.exp-badge.onsite {
-    background: #3a2a1a;
-    color: #ffb74d;
-}
-
-.exp-badge.contract {
-    background: #1a3a2a;
-    color: #81c784;
-}
-
 /* --------Experience Section - Skills Style----------- */
 .tab-contents#experience ul li {
     list-style: none;
@@ -236,7 +173,7 @@ nav ul li a:hover::after{
     padding-left: 4px;
 }
 
-/* Badge Colors - Softer to match the dark theme */
+/* Badge Colors */
 .exp-badge.remote {
     background: #1a3a5c;
     color: #4fc3f7;
@@ -257,85 +194,32 @@ nav ul li a:hover::after{
     color: #81c784;
 }
 
-/* --------Certification Links - Updated----------- */
-.tab-contents#certifications ul li {
-    list-style: none;
-    margin: 10px 0;
-    color: #ababab;
-    font-size: 14px;
-}
-
-.tab-contents#certifications ul li i {
-    color: #b54769;
-    font-size: 1rem;
-    margin-right: 8px;
-    width: 18px;
-}
-
-.cert-link {
-    color: #b54769;
-    text-decoration: none;
-    font-style: italic;
-    transition: color 0.3s ease;
-    font-weight: 500;
-}
-
-.cert-link:hover {
-    color: #ff004f;
-    text-decoration: none;
-}
-/* --------Certification Links - Updated----------- */
-.tab-contents#certifications ul li {
-    list-style: none;
-    margin: 10px 0;
-    color: #ababab;
-    font-size: 14px;
-}
-
-.tab-contents#certifications ul li i {
-    color: #b54769;
-    font-size: 1rem;
-    margin-right: 8px;
-    width: 18px;
-}
-
-.cert-link {
-    color: #b54769;
-    text-decoration: none;
-    font-style: italic;
-    transition: color 0.3s ease;
-    font-weight: 500;
-}
-
-.cert-link:hover {
-    color: #ff004f;
-    text-decoration: none;
-}
-
 /* --------Certification Links----------- */
 .tab-contents#certifications ul li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 6px 0;
+    list-style: none;
+    margin: 10px 0;
     color: #ababab;
+    font-size: 14px;
 }
 
 .tab-contents#certifications ul li i {
-    color: #ff004f;
+    color: #b54769;
     font-size: 1rem;
-    width: 20px;
+    margin-right: 8px;
+    width: 18px;
 }
 
 .cert-link {
-    color: #fff;
+    color: #b54769;
     text-decoration: none;
+    font-style: italic;
     transition: color 0.3s ease;
     font-weight: 500;
 }
 
 .cert-link:hover {
     color: #ff004f;
+    text-decoration: none;
 }
 
 /* --------projects----------- */
@@ -548,25 +432,16 @@ nav .fa-solid{
   }
   
   /* Experience mobile styles */
-  .tab-contents#experience ul li {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 5px;
-    padding: 15px;
-  }
-  
   .exp-title {
-    min-width: unset;
-    width: 100%;
+    font-size: 13px;
   }
   
   .exp-company {
-    margin-left: 0;
-    width: 100%;
+    font-size: 13px;
   }
   
   .exp-badge {
-    align-self: flex-start;
+    font-size: 0.6rem;
   }
 }
 
@@ -574,21 +449,4 @@ nav .fa-solid{
     color: #61b752;
     margin-top: -40px;
     display: block;
-}
-
-@media only screen and (max-width: 600px){
-    /* ... existing mobile styles ... */
-    
-    /* Experience mobile */
-    .exp-title {
-        font-size: 13px;
-    }
-    
-    .exp-company {
-        font-size: 13px;
-    }
-    
-    .exp-badge {
-        font-size: 0.6rem;
-    }
 }
