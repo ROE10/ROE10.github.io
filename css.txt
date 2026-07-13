@@ -151,10 +151,7 @@ nav ul li a:hover::after{
 }
 
 .exp-meta {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 8px;
+    display: block;
 }
 
 .exp-badge {
@@ -164,18 +161,22 @@ nav ul li a:hover::after{
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    flex-shrink: 0;
+    display: inline-block;
+    margin-right: 6px;
 }
 
 .exp-company {
     color: #ababab;
     font-size: 13px;
+    display: inline;
 }
 
 .exp-date {
     color: #666;
     font-size: 12px;
-    margin-left: auto;
+    display: block;
+    margin-top: 3px;
+    padding-left: 2px;
 }
 
 /* Badge Colors */
@@ -224,16 +225,17 @@ nav ul li a:hover::after{
     margin-right: 8px;
     width: 18px;
 }
-.cert-link {
-    color: #b54769;
-    text-decoration: none;
+.cert-link,
+.cert-link:link,
+.cert-link:visited {
+    color: #b54769 !important;
+    text-decoration: none !important;
     font-style: italic;
     font-weight: 500;
-    transition: color 0.3s ease;
 }
 .cert-link:hover {
-    color: #ff004f;
-    text-decoration: none;
+    color: #ff004f !important;
+    text-decoration: none !important;
 }
 
 /* --------projects----------- */
